@@ -4,14 +4,14 @@
 
 @include mat-core();
 
-$primary: mat-palette($mat-lime, 500);
+$primary: mat-palette($mat-green, 700);
 $accent:  mat-palette($mat-lime, 500, A200, A400);
 $warn:    mat-palette($mat-red, 500);
 
 $config: mat-typography-config();
 
 
-$theme: mat-light-theme($primary, $accent, $warn);
+$theme: mat-dark-theme($primary, $accent, $warn);
 
 @include angular-material-theme($theme);
 

@@ -6,6 +6,8 @@ function createWindow() {
   win = new BrowserWindow({
     width: 800,
     height: 600,
+    // backgroundColor: "#212121",
+    autoHideMenuBar: true
   });
 
   win.loadURL(`file://${__dirname}/dist/splinter-wallet/index.html`);
@@ -15,7 +17,7 @@ function createWindow() {
   });
 
   // uncomment to open DevTools
-  // win.webContents.openDevTools();
+  win.webContents.openDevTools();
 }
 
 app.on("ready", createWindow);
