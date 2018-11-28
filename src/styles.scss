@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/theming';
-@import url('//fonts.googleapis.com/icon?family=Material+Icons');
+// @import url('//fonts.googleapis.com/icon?family=Material+Icons');
+
+// ^ commented out above icons import due to slow boot time, check for a way to load fonts locally
 
 @include mat-core();
 
