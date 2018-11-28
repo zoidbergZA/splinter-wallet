@@ -1,12 +1,11 @@
 import { TestBed } from '@angular/core/testing';
-
-import { WalletServiceService } from './wallet-service.service';
+import { WalletService } from './wallet-service';
 
 describe('WalletServiceService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: WalletServiceService = TestBed.get(WalletServiceService);
+    const service: WalletService = TestBed.get(WalletService);
     expect(service).toBeTruthy();
   });
 });

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { WalletServiceService } from './providers/wallet-service.service';
+import { WalletService } from './providers/wallet-service';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,7 @@ import { WalletServiceService } from './providers/wallet-service.service';
 export class AppComponent implements OnInit {
   title = 'splinter-wallet';
 
-  constructor(private ws: WalletServiceService) { }
+  constructor(private ws: WalletService) { }
 
   ngOnInit(): void {
     console.log(this.ws.testString);

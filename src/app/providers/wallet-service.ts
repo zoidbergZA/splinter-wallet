@@ -8,7 +8,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class WalletServiceService {
+export class WalletService {
 
   testString = 'hello from wallet service!';
 
