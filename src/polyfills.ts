@@ -83,6 +83,8 @@ declare global {
   interface Window {
     fs: any;
     os: any;
+    path: any;
+    process: any;
     childProcess: any;
   }
 }
